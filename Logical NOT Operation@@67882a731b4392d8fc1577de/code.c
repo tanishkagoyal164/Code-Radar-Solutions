@@ -3,5 +3,10 @@
 int main(){
     int x;
     scanf("%d",&x);
-    printf(x!>0?"True":"False");
+    if(x!>0){
+        printf("True");
+    }
+    else{
+        printf("False");
+    }
 }
