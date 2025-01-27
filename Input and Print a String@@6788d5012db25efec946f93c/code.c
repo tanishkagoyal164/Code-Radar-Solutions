@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
     char a;
-    gets(a);
+    fgets(a);
     printf("You entered: %s",a);
 }
