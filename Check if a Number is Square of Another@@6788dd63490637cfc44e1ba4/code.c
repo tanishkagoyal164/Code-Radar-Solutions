@@ -7,6 +7,6 @@ char* welcome() {
 int main() {
     int x,y;
     scanf("%d %d",&x,&y);
-    printf(x==y**2?"Yes":"No");
+    printf(x==y*y?"Yes":"No");
     return 0;
 }
