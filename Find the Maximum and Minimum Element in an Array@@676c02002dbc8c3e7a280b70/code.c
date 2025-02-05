@@ -1,10 +1,6 @@
 #include <stdio.h>
 #include<limits.h>
 
-char* welcome() {
-    return "Welcome to Code Radar!";
-}
-
 int main() {
     int n,numbers[1000],i,max=maximum,min=minimum;
     scanf("%d",&n);
@@ -21,6 +17,6 @@ int main() {
             min=numbers[i];
         }
     }
-    printf("%d %d",max,min)
+    printf("%d %d",max,min);
     return 0;
 }
