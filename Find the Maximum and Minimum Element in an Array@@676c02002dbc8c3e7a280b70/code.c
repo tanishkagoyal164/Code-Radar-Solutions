@@ -9,8 +9,14 @@ int main() {
         if(numbers[i]>max){
             max=numbers[i];
         }
+        else{
+            max=max;
+        }
         if(numbers[i]<min){
             min=numbers[i];
+        }
+        else{
+            min=min;
         }
     }
     printf("%d %d",max,min);
