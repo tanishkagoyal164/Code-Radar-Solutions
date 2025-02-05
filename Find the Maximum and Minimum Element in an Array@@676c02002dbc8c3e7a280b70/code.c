@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include<limits.h>
 
 char* welcome() {
     return "Welcome to Code Radar!";
 }
 
 int main() {
-    int n,numbers[1000],i,max=0,min=0;
+    int n,numbers[1000],i,max=maximum,min=minimum;
     scanf("%d",&n);
     for(i=0;i<n;i++){
         scanf("%d",&numbers[i]);
