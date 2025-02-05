@@ -5,7 +5,7 @@ char* welcome() {
 }
 
 int main() {
-    int n,numbers[1000],max=0,min=0;
+    int n,numbers[1000],i,max=0,min=0;
     scanf("%d",&n);
     for(i=0;i<n;i++){
         scanf("%d",&numbers[i]);
