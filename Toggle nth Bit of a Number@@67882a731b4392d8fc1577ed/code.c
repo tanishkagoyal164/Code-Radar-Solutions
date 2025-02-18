@@ -1,5 +1,6 @@
 #include<stdio.h>
 int main(){
     int number,n;
-    printf("%d",number^(1<<n));
+    scanf("%d %d",&number,&n);
+    printf("%u",number^(1<<n));
 }
