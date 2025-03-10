@@ -1,27 +1,17 @@
 // Your code here...
 #include <stdio.h>
 
-void reverse(int arr[], int start, int end) {
-    while (start < end) {
-        int temp = arr[start];
-        arr[start] = arr[end];
-        arr[end] = temp;
-        start++;
-        end--;
+int isSorted(int arr[], int n) {
+    for (int i = 0; i < n - 1; i++) {
+        if (arr[i] > arr[i + 1]) {
+            return 0; // Not sorted
+        }
     }
-}
-
-void rotateArray(int arr[], int n, int k) {
-    // Reverse the entire array
-    reverse(arr, 0, n - 1);
-    // Reverse the first K elements
-    reverse(arr, 0, k - 1);
-    // Reverse the remaining N-K elements
-    reverse(arr, k, n - 1);
+    return 1; // Sorted
 }
 
 int main() {
-    int n, k;
+    int n;
     
     scanf("%d", &n);
 
@@ -31,14 +21,10 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-    
-    scanf("%d", &k);
-
-    rotateArray(arr, n, k);
-
-    
-    for (int i = n; i++) {
-        printf("%d ", arr[i]);
+    if (isSorted(arr, n)) {
+        printf("Sorted\n");
+    } else {
+        printf("Not Sorted\n");
     }
 
     return 0;
