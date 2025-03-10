@@ -1,4 +1,4 @@
-/#include <stdio.h>
+#include <stdio.h>
 
 int findFirstPeak(int arr[], int n) {
     if (n == 1) {
