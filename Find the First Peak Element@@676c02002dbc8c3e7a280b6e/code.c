@@ -1,5 +1,4 @@
-// Your code here...
-#include <stdio.h>
+/#include <stdio.h>
 
 int findFirstPeak(int arr[], int n) {
     if (n == 1) {
@@ -25,19 +24,15 @@ int findFirstPeak(int arr[], int n) {
 
 int main() {
     int n;
-    
     scanf("%d", &n);
 
     int arr[n];
-    
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
     int peak = findFirstPeak(arr, n);
-    
     printf("%d\n", peak);
-    
 
     return 0;
 }
