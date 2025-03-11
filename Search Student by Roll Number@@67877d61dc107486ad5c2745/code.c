@@ -12,10 +12,10 @@ struct Student {
 void searchStudent(struct Student students[], int n, int rollNumber) {
     for (int i = 0; i < n; i++) {
         if (students[i].rollNumber == rollNumber) {
-            printf("Student found:\n");
-            printf("Roll Number: %d\n", students[i].rollNumber);
-            printf("Name: %s\n", students[i].name);
-            printf("Marks: %.2f\n", students[i].marks);
+            
+            printf("Roll Number: %d ", students[i].rollNumber);
+            printf("Name: %s ", students[i].name);
+            printf("Marks: %.2f ", students[i].marks);
             return;
         }
     }
@@ -24,7 +24,7 @@ void searchStudent(struct Student students[], int n, int rollNumber) {
 
 int main() {
     int n, rollNumber;
-    printf("Enter the number of students: ");
+    
     scanf("%d", &n);
 
     // Array to store student data
@@ -32,17 +32,17 @@ int main() {
 
     // Input student data
     for (int i = 0; i < n; i++) {
-        printf("Enter details for student %d\n", i + 1);
-        printf("Roll Number: ");
+        
+        
         scanf("%d", &students[i].rollNumber);
-        printf("Name: ");
+        
         scanf("%s", students[i].name);
-        printf("Marks: ");
+        
         scanf("%f", &students[i].marks);
     }
 
     // Search for a student by roll number
-    printf("Enter roll number to search: ");
+    
     scanf("%d", &rollNumber);
     searchStudent(students, n, rollNumber);
 
