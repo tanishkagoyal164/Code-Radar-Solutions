@@ -19,7 +19,7 @@ void searchStudent(struct Student students[], int n, int rollNumber) {
             return;
         }
     }
-    printf("Student not found.\n");
+    printf("Student not found\n");
 }
 
 int main() {
