@@ -32,4 +32,4 @@ int main() {
 
     // Input student data
     for (int i = 0; i < n; i++) {
-        printf("Enter details
+        printf("Enter details");
