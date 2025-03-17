@@ -9,5 +9,5 @@ int main() {
     }
     printf("\n");
     return 0;*/
-    printf("%s",strrev(str));
+    printf("%s",strrev[str]);
 }
