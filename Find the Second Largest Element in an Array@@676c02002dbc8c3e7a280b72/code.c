@@ -10,13 +10,13 @@ int main(){
     }
     else{
         int max=arr[0];
-        int max2=arr[0];
+        int max2=-1;
         for(int i=0;i<n;i++){
             if(arr[i]>max){
                 max=arr[i];
             }
         }
-        int secmax;
+        int secmax=-1;
         for(int i=0;i<n;i++){
             if(arr[i]>=max2 && arr[i]!=max){
                 secmax=arr[i];
