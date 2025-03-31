@@ -51,7 +51,7 @@ int main(){
             isPalindrome=0;
             break;
         }
-    })
+    }
     if(isPalindrom){
         printf("YES");
     }
