@@ -1,4 +1,4 @@
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main() {
     int t, N;
@@ -37,3 +37,25 @@ int main() {
     
     return 0;
 }
+*/
+#include<stdio.h>
+int main()[
+    int n,arr[100];
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    int isPalindrome=1;
+    for(int i=0;i<n/2;i++{
+        if(arr[i]!=arr[n-i-i]){
+            isPalindrome=0;
+            break;
+        }
+    })
+    if(isPalindrom){
+        printf("YES");
+    }
+    else{
+        printf("NO");
+    }
+]
