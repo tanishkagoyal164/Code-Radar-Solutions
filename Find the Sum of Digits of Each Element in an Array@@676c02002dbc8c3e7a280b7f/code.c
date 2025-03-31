@@ -14,6 +14,6 @@ int main(){
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<n;i++){
-        printf("%d ",sum_digits(arr[i]));
+        printf("%d ",abs(sum_digits(arr[i])));
     }
 }
