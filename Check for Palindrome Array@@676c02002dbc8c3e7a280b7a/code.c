@@ -39,7 +39,7 @@ int main() {
 }
 */
 #include<stdio.h>
-int main()[
+int main(){
     int n,arr[100];
     scanf("%d",&n);
     for(int i=0;i<n;i++){
@@ -58,4 +58,4 @@ int main()[
     else{
         printf("NO");
     }
-]
+}
