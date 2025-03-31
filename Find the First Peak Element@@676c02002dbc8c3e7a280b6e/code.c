@@ -1,6 +1,6 @@
 #include<stdio.h>
 int findFirstPeak(int arr[],int n){
-    if(n==1) return arr[o];
+    if(n==1){return arr[o];}
     for(int i=0;i<n;i++){
         if(i==0 && arr[i]>arr[i+1]){
             return arr[i];
