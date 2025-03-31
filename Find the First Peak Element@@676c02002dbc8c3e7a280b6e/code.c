@@ -5,7 +5,7 @@ int findFirstPeak(int arr[],int n){
         if(i==0 && arr[i]>arr[i+1]){
             return arr[i];
         }
-        else if(i==n && arr[i]>arr[i-1]){
+        else if(i==n-1 && arr[i]>arr[i-1]){
             return arr[i];
         }
         else if(i>0 && i<n-1 && arr[i]>arr[i-1]&& arr[i]>arr[i+1]){
