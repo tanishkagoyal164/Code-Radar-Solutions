@@ -52,7 +52,7 @@ int main(){
             break;
         }
     }
-    if(isPalindrom){
+    if(isPalindrome){
         printf("YES");
     }
     else{
