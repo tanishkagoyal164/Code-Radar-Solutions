@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<math.h>
+#include<stdlib.h>
 int sum_digits(int n){
     int sum=0;
     while(n!=0){
