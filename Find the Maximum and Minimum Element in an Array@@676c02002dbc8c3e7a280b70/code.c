@@ -3,7 +3,7 @@ int main(){
     int n;
     int arr[100];
     scanf("%d",&n);
-    for(int i=1;i<=n;i++){
+    for(int i=0;i<n;i++){
         scanf("%d",arr[i]);
     }
     int min=arr[1];
