@@ -10,6 +10,7 @@ int main(){
             primenum++;
         }
     }
+    printf("%d",primenum);
 }
 int isprime(int n){
     int count=0;
