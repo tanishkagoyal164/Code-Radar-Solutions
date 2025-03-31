@@ -8,7 +8,7 @@ int main(){
     int firstrepeating=-1;
     for(int i=n-1;i>=0;i--){
         hash[arr[i]]++;
-    if(hash[arr[i]>1]){
+    if(hash[arr[i]]>1]){
         firstrepeating=arr[i];
         }
     }
