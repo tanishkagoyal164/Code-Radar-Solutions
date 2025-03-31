@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int n,arr[100],max=-1;
+    int n,arr[100],max=-12345;
     scanf("%d",&n);
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
@@ -10,5 +10,10 @@ int main(){
             max=arr[i];
         }
     }
-    printf("%d",max);
+    if(max!=-12345){
+        printf("%d",max);
+    }
+    else{
+        printf("-1");
+    }
 }
