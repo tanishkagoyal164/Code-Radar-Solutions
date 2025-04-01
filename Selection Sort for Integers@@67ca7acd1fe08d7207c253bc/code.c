@@ -1,4 +1,4 @@
-int selectionSort(int arr[], int N) {
+/*int selectionSort(int arr[], int N) {
     for (int i = 0; i < N - 1; i++) {
         int min_idx = i;
         for (int j = i + 1; j < N; j++) {
@@ -9,7 +9,20 @@ int selectionSort(int arr[], int N) {
         int temp = arr[min_idx];
         arr[min_idx] = arr[i];
         arr[i] = temp;
+    }*/
+int selectionSort(int arr[],int n){
+    for(i=0;i<n-1;i++){
+        int min_idx=1;
+        for(j=i+1;j<n;j++){
+            if(arr[j]<arr[min_idx]){
+                min_idx=j;
+            }
+        }
+        int temp=arr[min_idx];
+        arr[min_idx]=arr[i];
+        arr[i]=temp;
     }
+}
 }
 int printArray(int arr[],int n){
     for(int i=0;i<n;i++){
