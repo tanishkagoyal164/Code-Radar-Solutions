@@ -6,5 +6,5 @@ int main(){
     fgets(str2,sizeof(str2),stdin);
     str1[strcspn(str1,"\n")]='\0';
     str2[strcspn(str2,"\n")]='\0';
-    printf("%s",strcmp(str1,str2));
+    printf("%s%s",str1,str2);
 }
