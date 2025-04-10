@@ -2,6 +2,6 @@
 #include<string.h>
 int main(){
     char str[100];
-    scanf("%s",str);
+    gets(str,sizeof(str),stdin);
     printf("%d",strlen(str));
 }
