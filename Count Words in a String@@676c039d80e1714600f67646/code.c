@@ -3,9 +3,9 @@
 int main(){
     char str[100];
     int count=0;
-    fgets("%s",str);
+    fgets(str,sizeof(str),stdin);
     int len=strlen(str);
-    for(int i=0<i<=len;i++){
+    for(int i=0;i<=len;i++){
         if(str[i]==' '){
             count++;
         }
