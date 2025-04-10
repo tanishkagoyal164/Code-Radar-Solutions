@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-int main() {
+/*int main() {
     char str[100];
     scanf("%s", str);
     int len = strlen(str);
@@ -9,4 +9,13 @@ int main() {
     }
     printf("\n");
     return 0;
+}*/
+int main(){
+    char str[100];
+    scanf("%s",&str);
+    int len=strlen(str);
+    for(int i=len-1;i>=0;i--){
+        printf("%c",str[i]);
+    }
+    printf("\n");
 }
