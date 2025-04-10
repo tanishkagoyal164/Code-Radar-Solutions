@@ -7,7 +7,7 @@ int main(){
     for(int i=len-1;i>=0;i--){
         strrev[len-i-1]=str[i];
     }
-    if(strcmp(strrev,str)==0){
+    if(strrev==str){
         printf("YES");
     }
     else{
