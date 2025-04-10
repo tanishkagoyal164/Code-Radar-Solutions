@@ -4,6 +4,7 @@ int main(){
     char str1[100],str2[100];
     fgets(str1,sizeof(str1),stdin);
     fgets(str2,sizeof(str2),stdin);
-    printf("%s\0",str1);
-    printf("%s",str2);
+    str1[strcspn(str1,"\n")]='\0';
+    str2[strcspn(str2,"\n")]='\0';
+    printf("%s",strcmp(str1,str2));
 }
