@@ -10,9 +10,9 @@ int main(){
     }
     strrev[len]='\0';
     if(strcmp(strrev,str)==0){
-        printf("YES");
+        printf("Yes");
     }
     else{
-        printf("NO");
+        printf("No");
     }
 }
