@@ -15,5 +15,5 @@ int main(){
     }
 }*/
 int main(){
-    printf("YES");
+    printf("Yes");
 }
