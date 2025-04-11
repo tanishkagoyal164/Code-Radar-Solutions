@@ -8,6 +8,7 @@ int main(){
     for(int i=0;i<len;i++){
         revstr[i]=str1[len-i-1];
     }
+    revstr[len]='\0';
     if(strcmp(str2,revstr)==0){
         printf("Yes");
     }
